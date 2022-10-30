@@ -1,0 +1,9 @@
+.idea
+target
+.classpath
+.project
+.settings/
+.vscode/
+OutFile.txt
+StateCapitals.old.txt
+.DS_Store
