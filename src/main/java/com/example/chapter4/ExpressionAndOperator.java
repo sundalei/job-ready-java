@@ -125,6 +125,12 @@ public class ExpressionAndOperator {
         // We use the modulus operator (%) to get the reminder:
         result = operand1 % operand2; // result now equals 5
         
+        // It works with a combination of literals and variables:
+        result = 20 / operand1; // result now equals 4
+
+        // You can chain division operators together:
+        // result now equals 1
+        result = 245 / operand1 / operand2 / operand3;
 
         System.out.println(result);
 
