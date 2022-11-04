@@ -107,6 +107,24 @@ public class ExpressionAndOperator {
         // NOTE: the initial value of result is used to calculate
         // the new value of result:
         result = 2; //set result to 2
+        result *= 4; // result is now equal to 8 (2 * 4)
+        result *= operand1; // result is now equal to 40 (8 * 5)
+
+        //
+        // Division and Modulus
+        //
+        // Division is a binary infix operator. It works with literals:
+        result = 6 / 3; // result is now 2
+
+        // It also works with variables:
+        result = operand1 / operand2; // result now equals 0
+
+        // What?!?!?!?! When dividing integers, integer division is
+        // used - we only get the whole number part of the quotient.
+        // In this case, 7 goes into 5 0 times with a reminder of 5
+        // We use the modulus operator (%) to get the reminder:
+        result = operand1 % operand2; // result now equals 5
+        
 
         System.out.println(result);
 
