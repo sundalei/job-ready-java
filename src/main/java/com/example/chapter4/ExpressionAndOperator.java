@@ -132,6 +132,25 @@ public class ExpressionAndOperator {
         // result now equals 1
         result = 245 / operand1 / operand2 / operand3;
 
+        // The /= operator is used to add a value to a variable.
+        // result /= operand1 is equivalent to result = result /operand1.
+        // NOTE: the initial value of result is used to 
+        // calculate the new value of result:
+        result = 40; // set result to 40
+        result /= 4; // result is now equal to 10 (40 / 4)
+        result /= operand1; //result is now equal to 2 (10 / 5)
+
+        //
+        // Postfix and Prefix operators
+        //
+        // Finally, you can use the postfix and prefix operators
+        // to add 1 to a variable. The postfix add 1 after other things
+        // are done, the prefix operator add 1 before.
+        operand1 = 10; // set operand1 to 10
+        result = ++operand1; // adds 1 to operand then sets result to 11
+        operand1 = 10; // set operand1 back to 10
+        result = operand1++; // set result to 10, and then sets operand to 11
+
         System.out.println(result);
 
     }
