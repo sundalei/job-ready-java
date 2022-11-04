@@ -97,6 +97,17 @@ public class ExpressionAndOperator {
         // It works with a combination of literals and variables:
         result = 2 * operand1; // result now equals 10
 
+        // You can chain multiplication operators together:
+        // result now equals 490
+        result = 2 * operand1 * operand2 * operand3;
+
+        // Finally, the *= operator is used to add a value to a
+        // variable. result *= operand1 is equivalent to
+        // result = result * operand1.
+        // NOTE: the initial value of result is used to calculate
+        // the new value of result:
+        result = 2; //set result to 2
+
         System.out.println(result);
 
     }
